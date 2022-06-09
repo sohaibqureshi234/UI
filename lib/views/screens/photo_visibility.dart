@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:muslimdatingapp/constant/constant_widgets.dart';
 import 'package:muslimdatingapp/utils/color_resources.dart';
+import 'package:muslimdatingapp/views/screens/Edit%20Profile/Edit_Profile.dart';
 
 class PhotoVisibility extends StatefulWidget {
   const PhotoVisibility({Key? key}) : super(key: key);
@@ -135,7 +136,9 @@ class _PhotoVisibilityState extends State<PhotoVisibility> {
 
 
 
-          InkWell(onTap: (){},
+          InkWell(onTap: (){
+            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>EditProfile()));
+          },
             child: Container(
               height: 50,
               width: 274,

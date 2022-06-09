@@ -25,7 +25,7 @@ class _MarraigeState extends State<Marraige> {
             backgroundColor: Colors.white,
             title: Padding(
               padding: const EdgeInsets.only(top: 30, bottom: 15),
-              child: Text("Marraige"),
+              child: Text("Marraige Horrizon"),
             ),
             titleTextStyle: TextStyle(
                 color: Color(0xffF03C67),

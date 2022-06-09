@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:muslimdatingapp/views/screens/Convert/Revert.dart';
 import 'package:muslimdatingapp/views/screens/DOBpopup.dart';
+import 'package:muslimdatingapp/views/screens/Edit%20Profile/Edit_Profile.dart';
 import 'package:muslimdatingapp/views/screens/Education.dart';
 import 'package:muslimdatingapp/views/screens/HalalFood.dart';
 import 'package:muslimdatingapp/views/screens/Height.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Relocation(),
+      home: const EditProfile(),
     );
   }
 }
