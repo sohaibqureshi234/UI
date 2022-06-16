@@ -37,7 +37,9 @@ class DOB_PopScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 5),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Container(
                   height: 50,
                   width: 274,

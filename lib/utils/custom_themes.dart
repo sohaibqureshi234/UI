@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:muslimdatingapp/utils/dimensions.dart';
 
 const ubuntuRegular = TextStyle(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontSize: Dimensions.FONT_SIZE_DEFAULT,
 );
 
 const ubuntuSemiBold = TextStyle(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontSize: Dimensions.FONT_SIZE_DEFAULT,
   fontWeight: FontWeight.w600,
 );
@@ -19,12 +19,12 @@ const smalltitle = TextStyle(
 );
 
 const ubuntuBold = TextStyle(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontSize: Dimensions.FONT_SIZE_DEFAULT,
   fontWeight: FontWeight.w700,
 );
 const ubuntuItalic = TextStyle(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontSize: Dimensions.FONT_SIZE_DEFAULT,
   fontStyle: FontStyle.italic,
 );

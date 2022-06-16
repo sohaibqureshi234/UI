@@ -17,7 +17,7 @@ class _HalalFoodState extends State<HalalFood> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "HalalFood"),
+      appBar: PinkappbarWidget( context,title: "HalalFood"),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

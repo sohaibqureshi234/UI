@@ -17,7 +17,8 @@ class _ConvertState extends State<Convert> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Convert/Revert"),
+      appBar: PinkappbarWidget(context,
+        title: "Convert/Revert",),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

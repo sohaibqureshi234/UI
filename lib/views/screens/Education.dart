@@ -21,7 +21,7 @@ class _EducationState extends State<Education> {
         appBar: AppBar(
             centerTitle: true,
             elevation: 0,
-            leading: Image.asset("assets/images/png/back.png"),
+            leading: InkWell( onTap:(){Navigator.pop(context);},child: Image.asset("assets/images/png/back.png")),
             backgroundColor: Colors.white,
             title: Padding(
               padding: const EdgeInsets.only(top: 30, bottom: 15),
@@ -38,7 +38,6 @@ class _EducationState extends State<Education> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Expanded(
-                      flex: 5,
                       child: Container(
                         child: Column(children: [
                           Padding(
@@ -55,182 +54,185 @@ class _EducationState extends State<Education> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(bottom: 59, top: 20),
+                            padding: const EdgeInsets.only(bottom: 59, top: 10),
                             child: Text(
                               "Your level of education",
                               style: ubuntuBold.copyWith(fontSize: 25),
                             ),
                           ),
-                          Column(
-                            children: <Widget>[
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 0),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 0
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      " Secondary school",
-                                      style: ubuntuRegular.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 0
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                          Expanded(
+                            flex: 6,
+                            child: Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 0
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 40,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        " Secondary school",
+                                        style: ubuntuRegular.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 0
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(height: 4),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 1),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 1
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      "Non-degree Qualification",
-                                      style: ubuntuBold.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 1
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                                SizedBox(height: 0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 1),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 1
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 51,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        "Non-degree",
+                                        style: ubuntuBold.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 1
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(height: 4),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 2),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 2
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      "Bachlors degree",
-                                      style: ubuntuBold.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 2
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                                SizedBox(height: 0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 2),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 2
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 51,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        "Bachlors degree",
+                                        style: ubuntuBold.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 2
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(height: 4),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 3),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 3
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      " Masters degree",
-                                      style: ubuntuBold.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 3
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                                SizedBox(height: 0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 3),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 3
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 51,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        " Masters degree",
+                                        style: ubuntuBold.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 3
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(height: 4),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 4),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 4
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      " Doctorate",
-                                      style: ubuntuBold.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 4
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                                SizedBox(height: 0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 4),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 4
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 51,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        " Doctorate",
+                                        style: ubuntuBold.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 4
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              SizedBox(height: 4),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 10),
-                                child: GestureDetector(
-                                  onTap: () => setState(() => _value = 5),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                        color: _value == 5
-                                            ? ColorResources.CERISE
-                                            : Colors.transparent,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    height: 51,
-                                    width: 150,
-                                    child: Center(
-                                        child: Text(
-                                      "Other",
-                                      style: ubuntuBold.copyWith(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 12,
-                                        color: _value == 5
-                                            ? Colors.white
-                                            : Color(0xff6F6F6F),
-                                      ),
-                                    )),
+                                SizedBox(height: 0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 10),
+                                  child: GestureDetector(
+                                    onTap: () => setState(() => _value = 5),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          color: _value == 5
+                                              ? ColorResources.CERISE
+                                              : Colors.transparent,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      height: 51,
+                                      width: 150,
+                                      child: Center(
+                                          child: Text(
+                                        "Other",
+                                        style: ubuntuBold.copyWith(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12,
+                                          color: _value == 5
+                                              ? Colors.white
+                                              : Color(0xff6F6F6F),
+                                        ),
+                                      )),
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ]),
                       ))

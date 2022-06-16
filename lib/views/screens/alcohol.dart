@@ -17,7 +17,8 @@ class _AlcoholState extends State<Alcohol> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Alcohol"),
+      appBar: PinkappbarWidget( context,
+          title: "Alcohol"),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

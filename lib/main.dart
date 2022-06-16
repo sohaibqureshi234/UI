@@ -14,6 +14,7 @@ import 'package:muslimdatingapp/views/screens/children.dart';
 import 'package:muslimdatingapp/views/screens/gender.dart';
 import 'package:muslimdatingapp/views/screens/marraige_horrizon.dart';
 import 'package:muslimdatingapp/views/screens/martial_status.dart';
+import 'package:muslimdatingapp/views/screens/module%20two/2nd%20screen/Profile%20progress/profile_progress.dart';
 import 'package:muslimdatingapp/views/screens/nick_name.dart';
 import 'package:muslimdatingapp/views/screens/photo_visibility.dart';
 import 'package:muslimdatingapp/views/screens/prayer.dart';
@@ -33,15 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+
         primarySwatch: Colors.blue,
       ),
       home: const EditProfile(),

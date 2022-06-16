@@ -17,7 +17,7 @@ class _SmokeState extends State<Smoke> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Smoke"),
+      appBar: PinkappbarWidget( context,title: "Smoke"),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

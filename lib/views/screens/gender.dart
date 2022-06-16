@@ -17,7 +17,7 @@ class _GenderState extends State<Gender> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Gender"),
+      appBar: PinkappbarWidget( context,title: "Gender"),
       body: Container(
          padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

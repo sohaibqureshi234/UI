@@ -31,7 +31,8 @@ class _HeightState extends State<Height> {
             ],
             centerTitle: true,
             elevation: 0,
-            leading: Image.asset("assets/images/png/back.png"),
+            leading: InkWell(
+                onTap:(){Navigator.pop(context);},child: Image.asset("assets/images/png/back.png")),
             backgroundColor: Colors.white,
             title: Padding(
               padding: const EdgeInsets.only(top: 30, bottom: 15),

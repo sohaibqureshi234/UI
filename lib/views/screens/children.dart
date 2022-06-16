@@ -17,7 +17,7 @@ class _ChildrenState extends State<Children> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Children"),
+      appBar: PinkappbarWidget( context,title: "Children"),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

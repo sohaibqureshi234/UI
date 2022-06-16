@@ -15,12 +15,18 @@ appbarWidget({required String title}) {
       fontFamily: "Ubuntu"
   ));
 }
-PinkappbarWidget({required String title}) {
+PinkappbarWidget(BuildContext context,
+    {required String title, }
+    ) {
   return AppBar(
       centerTitle: true,
       elevation: 0,
 
-      leading: Image.asset("assets/images/png/back.png"),
+      leading: InkWell(
+        onTap: (){
+          Navigator.pop(context);
+        },
+          child: Image.asset("assets/images/png/back.png")),
       backgroundColor: Colors.white,
       title: Text(title), titleTextStyle: TextStyle(
       color: Color(0xffF03C67),

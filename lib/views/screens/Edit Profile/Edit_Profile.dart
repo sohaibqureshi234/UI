@@ -31,6 +31,7 @@ class EditProfile extends StatefulWidget {
 
 class _EditProfileState extends State<EditProfile> {
   bool status = false;
+  bool _showAppbar = true;
 
   @override
   Widget build(BuildContext context) {
@@ -211,7 +212,7 @@ class _EditProfileState extends State<EditProfile> {
                         onPressed: () {},
                         icon: ImageIcon(
                           AssetImage(
-                            "assets/images/png/img.png",
+                            "assets/images/png/Boost-normal.png",
                           ),
                           color: Colors.yellow,
                         )),

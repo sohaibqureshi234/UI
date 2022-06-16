@@ -17,7 +17,7 @@ class _RelocationState extends State<Relocation> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Relocation"),
+      appBar: PinkappbarWidget( context,title: "Relocation"),
       body: Container(
         padding: const EdgeInsets.only(top: 20,left: 20,right: 20),
         child: Column(

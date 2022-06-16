@@ -10,7 +10,7 @@ class NickName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: PinkappbarWidget(title: "Nick Name"),
+      appBar: PinkappbarWidget( context,title: "Nick Name"),
       body: Column(
         children: [
           Expanded(
