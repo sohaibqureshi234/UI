@@ -211,7 +211,7 @@ class _EditProfileState extends State<EditProfile> {
                         onPressed: () {},
                         icon: ImageIcon(
                           AssetImage(
-                            "assets/images/png/img.png",
+                            "",
                           ),
                           color: Colors.yellow,
                         )),
