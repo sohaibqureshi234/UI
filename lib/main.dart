@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const EditProfile(),
+      home: const ProfileProgress(),
     );
   }
 }
