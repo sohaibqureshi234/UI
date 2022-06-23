@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:muslimdatingapp/Message/Messages.dart';
 import 'package:muslimdatingapp/views/screens/Convert/Revert.dart';
 import 'package:muslimdatingapp/views/screens/DOBpopup.dart';
 import 'package:muslimdatingapp/views/screens/Edit%20Profile/Edit_Profile.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const ProfileProgress(),
+      home:  Messages(),
     );
   }
 }

@@ -41,6 +41,7 @@ dependencies:
   path: any
 
   linear_step_indicator: ^1.0.0+3
+  flutter_slidable: ^0.5.7
 
 dev_dependencies:
   flutter_test:
