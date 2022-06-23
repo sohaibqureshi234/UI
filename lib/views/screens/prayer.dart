@@ -35,6 +35,7 @@ class _PrayerState extends State<Prayer> {
                 fontSize: 31,
                 fontFamily: "Ubuntu")),
         body: Container(
+
             padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
