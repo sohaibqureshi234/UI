@@ -26,9 +26,14 @@ PinkappbarWidget(BuildContext context,
         onTap: (){
           Navigator.pop(context);
         },
-          child: Image.asset("assets/images/png/back.png")),
+          child: Padding(
+              padding: EdgeInsets.only(top: 10,bottom: 0),
+              child: Image.asset("assets/images/png/back.png"))),
       backgroundColor: Colors.white,
-      title: Text(title), titleTextStyle: TextStyle(
+
+      title: Padding(
+        padding: EdgeInsets.only(top: 10,bottom: 0),
+          child: Text(title)), titleTextStyle: TextStyle(
       color: Color(0xffF03C67),
       fontWeight: FontWeight.w500,
       fontSize: 31,
