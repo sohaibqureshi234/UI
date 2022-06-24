@@ -45,6 +45,13 @@ class _MessagesState extends State<Messages> {
                   fontWeight: FontWeight.w700, fontSize: 18),
             ),
             getChatlist(
+                function: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return ChatPage();
+                    },
+                  ));
+                },
                 img: "assets/images/jpg/man.jfif",
                 name: "Thomas Edison",
                 time: "23 min",
@@ -57,6 +64,13 @@ class _MessagesState extends State<Messages> {
               indent: 55,
             ),
             getChatlist(
+                function: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return ChatPage();
+                    },
+                  ));
+                },
                 img: "assets/images/png/grace.png",
                 name: "Elizabeth",
                 time: "10 min",
@@ -69,6 +83,13 @@ class _MessagesState extends State<Messages> {
               indent: 55,
             ),
             getChatlist(
+                function: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return ChatPage();
+                    },
+                  ));
+                },
                 img: "assets/images/png/elizabeth.png",
                 name: "Chleo",
                 time: "Now",
@@ -115,55 +136,58 @@ class _MessagesState extends State<Messages> {
   }) {
     return Column(
       children: [
-        Container(
-          padding: EdgeInsets.all(10),
-          child: Row(
-            children: [
-              CircleAvatar(
-                backgroundImage: AssetImage(img),
-              ),
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+        GestureDetector(
+          onTap: function,
+          child: Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage(img),
+                ),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              name,
+                              style: ubuntuRegular.copyWith(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                            Text(
+                              text,
+                              style: ubuntuRegular.copyWith(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w300),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Column(
                         children: [
                           Text(
-                            name,
+                            time,
                             style: ubuntuRegular.copyWith(
                                 color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w700),
-                          ),
-                          Text(
-                            text,
-                            style: ubuntuRegular.copyWith(
-                                color: Colors.black,
-                                fontSize: 14,
+                                fontSize: 12,
                                 fontWeight: FontWeight.w300),
                           ),
+                          Image.asset("assets/images/png/msgindicator.png"),
                         ],
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          time,
-                          style: ubuntuRegular.copyWith(
-                              color: Colors.black,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w300),
-                        ),
-                        Image.asset("assets/images/png/msgindicator.png"),
-                      ],
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],
