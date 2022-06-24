@@ -230,6 +230,7 @@ class _ChatPageState extends State<ChatPage> {
                                           fontWeight: FontWeight.w700),
                                     ),
                                     SizedBox(height: 5,),
+
                                     Text(
                                       "Online",
                                       style: ubuntuRegular.copyWith(
